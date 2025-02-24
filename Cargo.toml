@@ -2,5 +2,9 @@
 name = "slapy"
 version = "0.0.1"
 edition = "2021"
+authors = ["der_felix42 (slapy@derfelix.dev)"]
+description = "A much faster scapy"
+readme = "README.md"
+repository = "https://github.com/derfelix42/slapy"
 
 [dependencies]
