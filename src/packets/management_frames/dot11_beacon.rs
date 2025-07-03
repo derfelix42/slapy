@@ -32,7 +32,7 @@ impl Dot11BeaconFrame {
                 x
             }
             Err(e) => {
-                tracing::info!("Failed to map bytes into timestamp_bytes: {}", e);
+                // tracing::info!("Failed to map bytes into timestamp_bytes: {}", e);
                 0
             }
         };
@@ -40,7 +40,7 @@ impl Dot11BeaconFrame {
         let beacon_interval = match packet[i + 8..i + 10].try_into() {
             Ok(p) => u16::from_le_bytes(p),
             Err(e) => {
-                tracing::info!("Failed to map bytes into beacon_interval: {}", e);
+                // tracing::info!("Failed to map bytes into beacon_interval: {}", e);
                 0
             }
         };
@@ -48,7 +48,7 @@ impl Dot11BeaconFrame {
         let capabilities = match packet[i + 10..i + 12].try_into() {
             Ok(p) => u16::from_le_bytes(p),
             Err(e) => {
-                tracing::info!("Failed to map bytes into capabilities: {}", e);
+                // tracing::info!("Failed to map bytes into capabilities: {}", e);
                 0
             }
         };

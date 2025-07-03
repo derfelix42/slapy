@@ -1,3 +1,4 @@
+mod fingerprinter;
 mod packets;
 mod sniffer;
 mod utils;
