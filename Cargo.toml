@@ -1,12 +1,16 @@
 [package]
 name = "slapy"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 authors = ["der_felix42 (slapy@derfelix.dev)"]
 description = "A much faster scapy"
 readme = "README.md"
 repository = "https://github.com/derfelix42/slapy"
 license-file = "LICENSE.txt"
+
+[lib]
+name = "slapy"
+path = "src/lib.rs"
 
 [dependencies]
 uuid = { version = "1.17.0", features = ["v4", "serde"] }
