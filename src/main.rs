@@ -14,3 +14,7 @@ pub fn sniff(filename: String, callback: fn()) {
     println!("Sniffing file {}", filename);
     callback();
 }
+
+pub fn test(test: String) {
+    println!("Testing: {test}");
+}
