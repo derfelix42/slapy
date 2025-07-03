@@ -9,3 +9,4 @@ repository = "https://github.com/derfelix42/slapy"
 license-file = "LICENSE.txt"
 
 [dependencies]
+uuid = { version = "1.17.0", features = ["v4", "serde"] }
