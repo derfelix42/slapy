@@ -8,5 +8,5 @@ pub fn sniff(filename: String, callback: fn()) {
 }
 
 pub fn test(test: String) {
-    println!("Testing: {test}");
+    println!("Testing Slapy - input: {test}");
 }
